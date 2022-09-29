@@ -1,0 +1,122 @@
+
+
+main {
+    /* font-family: 'Anek Telugu', sans-serif; */
+    /* font-family: "Sofia", sans-serif; */
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 80px;
+}
+
+button {
+    background: transparent;
+    border-color: transparent;
+}
+
+/* header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.carrosel {
+    width: 80%;    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.div-esquerda {
+    width: 40%;
+    float: left;
+    text-align: center;
+ }
+
+ .div-direita {
+    text-align: center;
+    float: center;
+    width: 100%;
+ }
+
+ .total {
+    height: 34px;
+    width: 150px;
+    font-size: 14px;
+    border-color: black;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+ }
+
+ h1 {
+    /* precisa trocar a fonte */
+    margin: 30px;
+    margin-top: 60px;
+    text-align: center;
+    font-weight: normal 700;
+    font-size: 46px;
+    letter-spacing: -4px;
+    color: #343A40;
+ }
+
+ .destaque {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+ }
+
+ .sacola {
+    display: none;
+ }
+
+ .whatsapp {
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer i {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+
+
+
+
+ @media (max-width: 920px) {
+    .buscar {
+        display: none;
+    }
+
+    .total {
+        display: none;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .sacola {
+        display: block;
+    }
+}

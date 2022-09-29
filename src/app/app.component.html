@@ -1,15 +1,115 @@
-<img src="../assets/images/phpKuwq1e1610577772.png">
+<header>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <img src="../assets/images/phpKuwq1e1610577772.png">
+    </div>
+    <div class="menu">
+      <button mat-button>Home</button>
 
-<button mat-button [matMenuTriggerFor]="animals">Animal index</button>
-<mat-menu #animals="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
-</mat-menu>
+      <button mat-button [matMenuTriggerFor]="pais">País <i class="bi bi-chevron-down"></i></button>
+      <mat-menu #pais="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="vale">Vale</button>
+      </mat-menu>
 
-<mat-menu #vertebrates="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
-</mat-menu>
+      <mat-menu #vale="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="fish">Mendonza</button>
+      </mat-menu>
 
-<mat-menu #fish="matMenu">
-  <button mat-menu-item>Baikal oilfish</button>
-</mat-menu>
+      <mat-menu #fish="matMenu">
+        <button mat-menu-item>Baikal oilfish</button>
+      </mat-menu>
 
+      <button mat-button>Tipo</button>
+      <button mat-button>Uva</button>
+      <button mat-button>Acessórios</button>
+      <button mat-button>Combo</button>
+      <button mat-button>Curso</button>
+    </div>
+
+    <div class="buscar">
+      <input class="custom-file-input" placeholder="Buscar">
+      
+    </div>
+
+    <div class="total">
+      <mat-card class="total">R$ 500,00</mat-card>
+    </div>
+
+    <div class="sacola">
+      <i class="bi bi-bag-fill" style="font-size: 22px;"></i>
+    </div>
+
+  </div>
+</header>
+
+<main>  
+  <section>
+    <div class="carrosel">
+      <app-carrocel></app-carrocel>
+    </div>
+  </section>
+
+  <section>
+    <h1>PRODUTOS  EM  DESTAQUE</h1>
+  </section>
+
+  <section>
+    <div>
+      <app-destaque></app-destaque>
+    </div>
+  </section>
+
+
+  <section>
+    <h1 style="margin-top: 80px;">MAIS  VENDIDOS</h1>
+  </section>
+
+  <section>
+    <div>
+      <app-mais-vendidos></app-mais-vendidos>
+    </div>
+  </section>
+
+
+
+  <section>
+    <h1 style="margin-top: 80px;">COMENTÁRIOS</h1>
+  </section>
+
+  <section>
+    <app-comentarios></app-comentarios>
+  </section>
+</main>
+
+<div>
+  <a href="https://api.whatsapp.com/send?phone=55###########" 
+     target="_blank">
+     <img  class="whatsapp" src="https://assets.boxloja.pro/shop/img/whatsapp.png" />
+  </a>
+</div>
+
+<hr>
+
+<footer>
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-whatsapp"></i>
+
+  <div>
+    <app-mapa-site></app-mapa-site>
+  </div>
+</footer>
+
+<hr>
+
+<div style="display: flex; justify-content: center; font-size: 10px; color: #343A40; line-height: -0px;">
+  <p>Beba com responsabilidade. 
+    A venda de bebidas alcoólicas é proibida para menores de 18 anos.
+    Dirigir sob influência de álcool configura delito, 
+    passível de sanção penal.
+  </p>
+</div>
+
+<div style="display: flex; justify-content: center; font-size: 10px; color: #343A40; line-height: -0px; padding-bottom: 15px;">
+  <p class="copyright">&copy; Copyright John Proencio - 2022</p>
+</div>

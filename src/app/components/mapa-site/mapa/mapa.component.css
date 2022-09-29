@@ -1,0 +1,26 @@
+.principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.maps {
+    padding-left: 15px;
+    padding-top: 15px;
+    color: #343A40;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+button {
+    border-color: transparent;
+    background: transparent;
+    color: #343A40;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+}
