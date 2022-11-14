@@ -1,0 +1,54 @@
+.whatsapp {
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer i {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.warning {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #343A40;
+    line-height: -0px;
+}
+
+.reserva {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #343A40;
+    line-height: -0px;
+    padding-bottom: 15px;
+}
+
+@media (max-width: 750px) {
+
+    .warning {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        line-height: 10px;
+    }
+
+    .reserva {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}

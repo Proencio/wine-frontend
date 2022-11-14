@@ -1,0 +1,46 @@
+<header>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        <img src="../assets/images/phpKuwq1e1610577772.png">
+      </div>
+      
+      <div class="menu">
+        <button mat-button (click)="home()">Home</button>
+  
+        <button mat-button [matMenuTriggerFor]="pais">País <i class="bi bi-chevron-down"></i></button>
+        <mat-menu #pais="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="vale">Vale</button>
+        </mat-menu>
+  
+        <mat-menu #vale="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="fish">Mendonza</button>
+        </mat-menu>
+  
+        <mat-menu #fish="matMenu">
+          <button mat-menu-item>Baikal oilfish</button>
+        </mat-menu>
+  
+        <button mat-button (click)="produtos()">Tipo</button>
+        <button mat-button>Uva</button>
+        <button mat-button>Acessórios</button>
+        <button mat-button>Combo</button>
+        <button mat-button>Curso</button>
+      </div>
+  
+      <div class="buscar">
+        <input class="custom-file-input" placeholder="Buscar">
+        
+      </div>
+  
+      <div class="total">
+        <mat-card class="total">
+          <button (click)="sacola()">R$ 500,00</button>
+        </mat-card>
+      </div>
+  
+      <div class="sacola">
+        <i class="bi bi-bag-fill" style="font-size: 22px;"></i>
+      </div>
+  
+    </div>
+  </header>

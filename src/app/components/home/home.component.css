@@ -1,0 +1,34 @@
+.carrosel {
+    width: 80%;    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+h1 {
+    /* precisa trocar a fonte */
+    margin: 30px;
+    margin-top: 60px;
+    text-align: center;
+    font-weight: normal 700;
+    font-size: 46px;
+    letter-spacing: -4px;
+    color: #343A40;
+ }
+
+ .destaque {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+ }
+
+
+ @media (min-width: 1542px) {
+
+    .carrosel {
+        max-width: 1130px;
+    }
+}

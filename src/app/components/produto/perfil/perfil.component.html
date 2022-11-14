@@ -1,0 +1,66 @@
+<div class="principal">
+    <section class="section">
+        <div>
+            <img class="card-img-top" src="../../../../assets/images/15026104819_pulenta-rose.jpg" alt="Imagem do vinho">
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="body-card">
+            <h1>Pulenta Rose</h1>
+            
+            <div class="preco">
+                <p class="preco-bruto">R$ 190,00</p>
+                <p class="preco-liquido">R$ 120,00</p>
+            </div>
+    
+            <div class="status-disp">
+                <p class="disp">Disponibilidade: </p>
+                <p class="status"> Em estoque</p>
+            </div>
+    
+            <div class="comprar" >
+                    <input type="number" class="form-control" >
+                    <!-- [(ngModel)]="value"> -->
+                    <button class="button-cp">COMPRAR</button>                
+            </div>
+    
+            <hr>
+    
+            <div class="sku">
+                <p>SKU: 00000000000252326</p>
+                <p>Categoria: Argentina, Mendonza</p>
+            </div>
+    
+            <button class="ficha">FICHA TÉCNICA <i class="bi bi-download" style="margin-left: 5px; font-size: 18px;"></i></button> 
+            
+        </div>    
+    </section>
+</div>
+
+<div class="principal">
+    <mat-tab-group mat-align-tabs="start">
+        <mat-tab label="Descrição">Descrição</mat-tab>
+        <mat-tab label="Informação Adicional">
+            
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+       
+                <ng-container matColumnDef="nome">
+                  <th mat-header-cell *matHeaderCellDef>Informação Adicional</th>
+                  <td mat-cell *matCellDef="let element" style="width: 30%;"> {{element.nome}} </td>
+                </ng-container>
+              
+                
+                <ng-container matColumnDef="descricao">
+                  <th mat-header-cell *matHeaderCellDef></th>
+                  <td mat-cell *matCellDef="let element"> {{element.descricao}} </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table> 
+
+        </mat-tab>
+        <mat-tab label="Ficha Técnica">Ficha Técnica</mat-tab>
+      </mat-tab-group>
+</div>

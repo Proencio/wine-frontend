@@ -14,6 +14,18 @@ import { ComentarioComponent } from './components/comentario/comentario/comentar
 import { ComentariosComponent } from './components/comentario/comentarios/comentarios.component';
 import { MapaComponent } from './components/mapa-site/mapa/mapa.component';
 import { MapaSiteComponent } from './components/mapa-site/mapa-site.component';
+import { ProdutosComponent } from './components/produtos/produtos/produtos.component';
+import { SacolaComponent } from './components/sacola/sacola/sacola.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProdutoModelComponent } from './components/produto-model/produto-model.component';
+import { PerfilComponent } from './components/produto/perfil/perfil.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { PedidoComponent } from './components/pagamento/pedido/pedido.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +37,27 @@ import { MapaSiteComponent } from './components/mapa-site/mapa-site.component';
     ComentarioComponent,
     ComentariosComponent,
     MapaComponent,
-    MapaSiteComponent
+    MapaSiteComponent,
+    ProdutosComponent,
+    SacolaComponent,
+    HomeComponent,
+    MenuComponent,
+    FooterComponent,
+    ProdutoModelComponent,
+    PerfilComponent,
+    PedidoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatTableModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

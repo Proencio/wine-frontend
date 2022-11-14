@@ -1,0 +1,20 @@
+<div class="card principal" (click)="visualizar()">
+    <img class="card-img-top" src="../../../../assets/images/15026104819_pulenta-rose.jpg" alt="Imagem do vinho">
+
+    <div class="card-body" style="max-height: 137px;">
+        <h5 class="card-title">Pulenta Rose</h5>
+        <p class="pais">Argentina</p>
+
+        <div style="display: flex; justify-content: center;">
+            <p class="card-text p-bruto">R$ 190,00</p>
+            <p class="card-text p-preco">R$ 190,00</p>
+        </div>
+    </div>
+
+    <div class="button-div">
+        <button (click)="comprar()">COMPRAR</button>
+    </div>
+    <div class="off" *ngIf="isOferta">
+        <p>Oferta</p>
+    </div>
+</div>

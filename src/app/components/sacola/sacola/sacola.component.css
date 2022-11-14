@@ -1,0 +1,102 @@
+ .body {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .title {
+   width: 95%; display: flex; margin: 0 auto;
+ }
+
+h1 {
+    /* margin: 30px; */
+    margin-top: 60px;
+    font-weight: 580;
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    color: #343A40;
+ }
+
+ .body-table {
+   width: 95%;
+   display:flex;
+   margin: 0 auto;
+ }
+
+ .body-descritivo {
+   width: 40%;
+   align-self: flex-end;
+   margin: 23px;
+ }
+
+ .body-descritivo div {
+   background: #F3F5FC;
+   border-radius: 0px
+ }
+
+ .body-descritivo div div {
+   border-radius: 0px;
+   border-top: transparent;
+ }
+
+ .title-descritivo {
+   color: #343A40;
+   margin: 10px;
+   font-weight: 700;
+   font-size: 15px;
+ }
+
+ .sub {
+   display: flex;
+   padding-top: 25px;
+   padding-left: 25px;
+ }
+
+ .hr-1 {
+   width: 90%;
+   display: flex;
+   margin: 0 auto;
+ }
+
+ .entrega {
+   display: flex;
+   padding-top: 15px;
+   padding-left: 25px;
+ }
+
+.hr-2 {
+   width: 90%;
+   display: flex;
+   margin: 0 auto;
+   margin-top: 40px;
+}
+
+.total {
+   display: flex;
+   padding-top: 10px;
+   padding-left: 25px;
+}
+
+.hr-3 {
+   width: 90%;
+   display: flex;
+   margin: 0 auto;
+   margin-top: -5px;
+}
+
+.button-compra {
+   width: 90%;
+   display: flex;
+   margin: 0 auto;
+   margin-bottom: 20px;
+}
+
+button {
+   background: #343A40;
+   color: #FFFFFF;
+   font-weight: 700;
+   height: 33px;
+   border: #343A40;
+}
+

@@ -1,0 +1,66 @@
+
+
+main {
+    /* font-family: 'Anek Telugu', sans-serif; */
+    /* font-family: "Sofia", sans-serif; */
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 80px;
+}
+
+button {
+    background: transparent;
+    border-color: transparent;
+}
+
+.div-esquerda {
+    width: 40%;
+    float: left;
+    text-align: center;
+ }
+
+ .div-direita {
+    text-align: center;
+    float: center;
+    width: 100%;
+ }
+
+ .total {
+    height: 34px;
+    width: 150px;
+    font-size: 14px;
+    border-color: black;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+ }
+
+ .sacola {
+    display: none;
+ }
+
+
+
+ @media (max-width: 920px) {
+    .buscar {
+        display: none;
+    }
+
+    .total {
+        display: none;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .sacola {
+        display: block;
+    }
+}
