@@ -1,3 +1,51 @@
-<app-menu></app-menu>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-menu [openMenu]="openMenu" (respostaOpenMenu)="reciverFeedback($event)"></app-menu>
+<!-- style="z-index: 2; position: absolute; width: 100%;" -->
+  <mat-drawer-container class="">
+    <mat-drawer class="body-menu" *ngIf="openMenu" mode="side" opened>
+      
+      <button class="button-menu" (click)="usuarios()">
+        <p class="iten">
+          <i class="bi bi-people-fill"></i>
+          Usuarios
+        </p>
+        <hr>
+      </button>
+      
+      <button class="button-menu" (click)="usuarios()">
+        <p class="iten">
+          <i class="bi bi-box-seam-fill"></i>
+          Produtos
+        </p>
+        <hr>
+      </button>
+
+      <button class="button-menu" (click)="empresa()">
+        <p class="iten">
+          <i class="bi bi-card-heading"></i>
+          Empresa
+        </p>
+        <hr>
+      </button>
+
+      <button class="button-menu" (click)="usuarios()">
+        <p class="iten">
+          <i class="bi bi-tags-fill"></i>
+          Categoria
+        </p>
+        <hr>
+      </button>
+
+      <button class="button-menu" (click)="usuarios()">
+        <p class="iten">
+          <i class="bi bi-file-bar-graph-fill"></i>
+          Relatórios
+        </p>
+        <hr>
+      </button>
+
+    </mat-drawer>
+    <mat-drawer-content>
+          <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </mat-drawer-content>
+  </mat-drawer-container>

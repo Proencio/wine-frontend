@@ -1,66 +1,35 @@
 
+.body-menu{
+    /* box-shadow: 0px 3px 10px rgb(39, 39, 39); */
 
-main {
-    /* font-family: 'Anek Telugu', sans-serif; */
-    /* font-family: "Sofia", sans-serif; */
+    
+    /* padding:6px;
+    width: 250px;
+    border-width: 1px;
+    border-color: #c8c9ca; */
+    
 }
 
-header {
-    width: 80%;
-    margin: 0 auto;
+.menu {
+    /* position: fixed; */
+    
 }
 
-img {
-    width: 80px;
+nav {
+  height: 100%;
 }
 
-button {
-    background: transparent;
-    border-color: transparent;
+.side-nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.div-esquerda {
-    width: 40%;
-    float: left;
-    text-align: center;
- }
-
- .div-direita {
-    text-align: center;
-    float: center;
-    width: 100%;
- }
-
- .total {
-    height: 34px;
-    width: 150px;
-    font-size: 14px;
-    border-color: black;
-    display : flex;
-    align-items : center;
-    justify-content : center;
- }
-
- .sacola {
-    display: none;
- }
-
-
-
- @media (max-width: 920px) {
-    .buscar {
-        display: none;
-    }
-
-    .total {
-        display: none;
-    }
-
-    .menu {
-        text-align: center;
-    }
-
-    .sacola {
-        display: block;
-    }
+.sidenav-button:hover {
+  background-color: black;
+  border-radius: 30%;
+  
 }
+

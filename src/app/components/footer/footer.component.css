@@ -1,4 +1,4 @@
-.whatsapp {
+/* .whatsapp {
     position: fixed;
     top: 82%;
     right: 1%;
@@ -24,17 +24,18 @@ footer i {
     font-size: 10px;
     color: #343A40;
     line-height: -0px;
-}
+} */
 
 .reserva {
-    display: flex;
-    justify-content: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    /* margin-left: -100px; */
+    text-align: center;
     font-size: 10px;
     color: #343A40;
-    line-height: -0px;
-    padding-bottom: 15px;
 }
-
+/* 
 @media (max-width: 750px) {
 
     .warning {
@@ -51,4 +52,4 @@ footer i {
         justify-content: center;
         text-align: center;
     }
-}
+} */

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,10 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
+  @Input() openMenu: any;
+  @Output() respostaOpenMenu = new EventEmitter();
+  
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    console.log(this.openMenu);
+    console.log('Objeto familia recebido do component pai via Input: ', this.openMenu);
   }
 
   produtos(): void {
@@ -23,5 +27,13 @@ export class MenuComponent implements OnInit {
 
   home(): void {
     this.router.navigate(['']);
+  }
+
+  menu(): void {
+    if (this.openMenu) {
+      this.respostaOpenMenu.emit(false);
+    } else {
+      this.respostaOpenMenu.emit(true);
+    }     
   }
 }

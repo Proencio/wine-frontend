@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PerfilEmpresaComponent } from './components/empresa/perfil-empresa/perfil-empresa.component';
 import { HomeComponent } from './components/home/home.component';
-import { PedidoComponent } from './components/pagamento/pedido/pedido.component';
-import { PerfilComponent } from './components/produto/perfil/perfil.component';
-import { ProdutosComponent } from './components/produtos/produtos/produtos.component';
-import { SacolaComponent } from './components/sacola/sacola/sacola.component';
+import { UsuariosComponent } from './components/usuarios/usuarios/usuarios.component';
 
 const routes: Routes = [
   {
@@ -12,21 +10,21 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'produtos',
-    component: ProdutosComponent
+    path: 'usuarios',
+    component: UsuariosComponent
   },
   {
-    path: 'sacola',
-    component: SacolaComponent
+    path: 'empresa',
+    component: PerfilEmpresaComponent
   },
-  {
-    path: 'produto/perfil',
-    component: PerfilComponent
-  },
-  {
-    path: 'pedido',
-    component: PedidoComponent
-  }
+  // {
+  //   path: 'produto/perfil',
+  //   component: PerfilComponent
+  // },
+  // {
+  //   path: 'pedido',
+  //   component: PedidoComponent
+  // }
 ];
 
 @NgModule({
